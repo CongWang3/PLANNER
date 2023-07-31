@@ -394,7 +394,7 @@ if __name__ == "__main__":
 
     # ensemble
     if cell in ['M-MEF']:
-        with open('examples/sample_data/ORI/model/M/lr.pkl', mode='rb') as file:
+        with open('examples/sample_data/ORI/lr.pkl', mode='rb') as file:
             lr = pickle.load(file)
         label = lr.predict(feature)
         prob = lr.predict_proba(feature)[:, 1]
