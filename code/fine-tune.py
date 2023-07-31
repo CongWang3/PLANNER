@@ -568,7 +568,7 @@ if __name__ == "__main__":
     parser.add_argument("--evaluate_during_training", default=False)
     parser.add_argument("--do_lower_case", default=False)
     parser.add_argument("--data_dir", default="./examples/sample_data/ORI/3/", help="File save path for training and testing data, with the training file name train.tsv and testing file name dev.tsv")
-    parser.add_argument("--output_dir", help='Save path for results')
+    parser.add_argument("--output_dir", default="./examples/sample_data/ORI/3/model/", help='Save path for results')
     
     args = parser.parse_args()
     
@@ -597,9 +597,9 @@ if __name__ == "__main__":
         model, tokenizer, global_step, tr_loss = train(args, train_dataset_1, model, tokenizer, sp=sp)
         print('global_step =', round(global_step, 5), 'average loss =', round(tr_loss, 5), 'species =', sp)
         
-        checkpoint_prefix = "checkpoint"
-        name = 'checkpoint'
-        output_dir = os.path.join(args.output_dir, name)
+
+        output_dir = args.output_dir
+        checkpoint_prefix = "model"
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
         model_to_save = (
