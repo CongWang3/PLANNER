@@ -41,9 +41,9 @@ If you are going to fine-tune DNABERT with your own data, please process your da
 
 ```
 sequence	label
-TGG GGA GAG AGG GGT 1  # 空格，记得glue文件修改
-CAG AGC GCC CCC CCA 0
-ATT TTG TGG GGA GAG 0
+TGG GGA GAG AGG GGT	1
+CAG AGC GCC CCC CCA	0
+ATT TTG TGG GGA GAG	0
 ```
 
 ## 2.3 Fine-tune with pre-trained model and predict
