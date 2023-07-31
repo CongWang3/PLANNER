@@ -577,7 +577,7 @@ if __name__ == "__main__":
     print('args.device =', args.device)
     set_seed(args)
     
-    species = ['A', 'H', 'M', 'D']
+    species = ['A']  # ['A', 'H', 'M', 'D']
     for sp in species:
         if sp == 'D':
             cells = ['D-Bg3', 'D-S2', 'D-Kc']
