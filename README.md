@@ -11,10 +11,10 @@ conda activate pt36
 
 ```
 pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
-conda env create -f environment.yaml
 
 cd PLANNER
 python -m pip install --editable .
+python -m pip install -r requirements.txt
 ```
 
 # 2. Fine-tune and predict
