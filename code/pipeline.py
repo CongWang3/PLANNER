@@ -355,9 +355,9 @@ if __name__ == "__main__":
     cell = args.cell_type
     print(cell)
 
-    if cell in ['M-ES', 'M-P19', 'D-Kc', 'D-Bg3', 'D-S2','M-MEF']:
+    if cell in ['M-ES', 'M-P19', 'D-Kc', 'D-Bg3', 'D-S2']:
         kmer = ['_3', '_4', '_5', '_6']
-    elif cell in ['H-K562', 'A']:
+    elif cell in ['H-K562', 'A','M-MEF']:
         kmer = ['_3', '_4', '_6']
     elif cell in ['H-MCF7']:
         kmer = ['_3', '_5']
