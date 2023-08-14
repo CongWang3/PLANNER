@@ -238,7 +238,7 @@ def load_and_cache_examples(args, task, tokenizer, evaluate=False):
     dataset = TensorDataset(all_input_ids, all_attention_mask, all_token_type_ids, all_labels)
     return dataset
 
-def train(args, train_dataset, model, tokenizer, sp = 'A'):  # index用于args.model_name_or_path
+def train(args, train_dataset, model, tokenizer, sp = 'A'):
     """ Train the model """
     if args.local_rank in [-1, 0]:
         tb_writer_1 = SummaryWriter()
