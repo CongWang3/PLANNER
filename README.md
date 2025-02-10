@@ -63,4 +63,4 @@ Python pipeline.py --cell_type A
 
 
 All model we trained are provided at web server [http://planner.unimelb-biotools.cloud.edu.au/](http://planner.unimelb-biotools.cloud.edu.au/.)
-
+If you want to use PLANNER, please cite the following publication: C. Wang et al., "PLANNER: A Multi-Scale Deep Language Model for the Origins of Replication Site Prediction," in IEEE Journal of Biomedical and Health Informatics, vol. 28, no. 4, pp. 2445-2454, April 2024, doi: 10.1109/JBHI.2024.3349584
